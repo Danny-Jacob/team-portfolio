@@ -106,3 +106,149 @@ export const testimonials = [
     reviewText: "Absolutely phenomenal execution. The e-commerce site they delivered was blazing fast, beautiful, and the entire process from design to launch was incredibly smooth."
   }
 ];
+
+// Services data with icons (lucide-react icon names)
+export const services = [
+  {
+    id: 1,
+    title: "Branding",
+    description: "Craft distinctive brand identities that resonate with your audience and stand out in crowded markets.",
+    icon: "Palette",
+    gradient: "from-[#DF9355] to-[#D27321]",
+  },
+  {
+    id: 2,
+    title: "Performance Marketing",
+    description: "Data-driven campaigns that maximize ROI across Meta, Google, and programmatic channels.",
+    icon: "TrendingUp",
+    gradient: "from-[#226A76] to-[#42776F]",
+  },
+  {
+    id: 3,
+    title: "AI Automation",
+    description: "Custom AI workflows and chatbots that streamline operations and enhance customer experience.",
+    icon: "Bot",
+    gradient: "from-[#D27321] to-[#A4492A]",
+  },
+  {
+    id: 4,
+    title: "SEO Strategy",
+    description: "Technical and content SEO that drives organic visibility and sustainable traffic growth.",
+    icon: "Search",
+    gradient: "from-[#42776F] to-[#094550]",
+  },
+  {
+    id: 5,
+    title: "Web Design",
+    description: "Immersive, award-worthy websites built with cutting-edge technologies and cinematic interactions.",
+    icon: "Monitor",
+    gradient: "from-[#DF9355] to-[#A4492A]",
+  },
+  {
+    id: 6,
+    title: "Social Media",
+    description: "Strategic content creation and community management that builds engaged audiences.",
+    icon: "Share2",
+    gradient: "from-[#226A76] to-[#094550]",
+  },
+  {
+    id: 7,
+    title: "Content Production",
+    description: "Premium video, photography, and motion design that captures attention and tells your story.",
+    icon: "Video",
+    gradient: "from-[#D27321] to-[#DF9355]",
+  },
+  {
+    id: 8,
+    title: "Funnel Optimization",
+    description: "Conversion-focused landing pages and sales funnels that turn visitors into customers.",
+    icon: "Target",
+    gradient: "from-[#094550] to-[#226A76]",
+  },
+];
+
+// Trust/client logos (using text placeholders - replace with actual logos)
+export const trustLogos = [
+  "Tata Digital",
+  "Reliance Retail",
+  "Swiggy",
+  "Zerodha",
+  "BYJU'S",
+  "Razorpay",
+  "Dream11",
+  "Groww",
+  "upGrad",
+  "Lenskart",
+];
+
+// Process steps
+export const processSteps = [
+  {
+    id: 1,
+    number: "01",
+    title: "Discover",
+    description: "We deep-dive into your business, audience, and competitors. Research-backed insights form the foundation of every strategy.",
+  },
+  {
+    id: 2,
+    number: "02",
+    title: "Strategize",
+    description: "From brand positioning to channel selection, we architect a comprehensive roadmap tailored to your growth objectives.",
+  },
+  {
+    id: 3,
+    number: "03",
+    title: "Create",
+    description: "Our creative team brings the strategy to life through stunning visuals, compelling copy, and immersive digital experiences.",
+  },
+  {
+    id: 4,
+    number: "04",
+    title: "Scale",
+    description: "We launch, measure, optimize, and scale. Continuous iteration ensures sustained growth and market dominance.",
+  },
+];
+
+// Case studies with metrics (using existing portfolio projects with added metrics)
+export const caseStudies = [
+  {
+    id: 1,
+    title: "Mint Restaurant",
+    category: "Brand Identity",
+    image: project1Img,
+    metrics: { revenue: "340%", leads: "2.4x", roas: "5.8" },
+    description: "Complete brand overhaul and digital strategy for Mumbai's premier fine-dining chain.",
+  },
+  {
+    id: 2,
+    title: "Ecohold",
+    category: "Performance Marketing",
+    image: project2Img,
+    metrics: { revenue: "₹4.2Cr", leads: "18K+", roas: "7.2" },
+    description: "Full-funnel performance campaigns for sustainable investment platform.",
+  },
+  {
+    id: 3,
+    title: "Keystone School",
+    category: "Web + SEO",
+    image: project3Img,
+    metrics: { revenue: "890%", leads: "12K+", roas: "4.5" },
+    description: "Award-winning website and organic growth strategy for EdTech leader.",
+  },
+  {
+    id: 4,
+    title: "Mythosbox",
+    category: "E-commerce",
+    image: project5Img,
+    metrics: { revenue: "₹1.8Cr", leads: "45K+", roas: "6.1" },
+    description: "End-to-end e-commerce experience for cultural education startup.",
+  },
+];
+
+// Hero stats
+export const heroStats = [
+  { value: "150+", label: "Projects Delivered" },
+  { value: "₹80Cr+", label: "Revenue Generated" },
+  { value: "98%", label: "Client Retention" },
+  { value: "12+", label: "Industry Awards" },
+];

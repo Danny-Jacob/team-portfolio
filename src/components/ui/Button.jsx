@@ -10,17 +10,17 @@ export const Button = ({
     ...props
 }) => {
     const baseStyles =
-        "inline-flex items-center justify-center rounded-full font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none";
+        "inline-flex items-center justify-center rounded-full font-semibold transition-all focus:outline-none disabled:opacity-50 disabled:pointer-events-none";
 
     const variants = {
         primary:
-            "bg-primary text-white hover:bg-blue-600 focus:ring-primary dark:focus:ring-offset-slate-900",
+            "bg-gradient-to-r from-[#DF9355] to-[#D27321] text-white hover:shadow-[0_0_30px_rgba(223,147,85,0.4)]",
         secondary:
-            "bg-slate-100 text-slate-900 hover:bg-slate-200 dark:bg-slate-800 dark:text-gray-100 dark:hover:bg-slate-700 focus:ring-slate-500",
+            "bg-[#071820] text-[#e8dcc8] border border-[rgba(223,147,85,0.2)] hover:border-[#DF9355]/50",
         outline:
-            "border-2 border-slate-200 text-slate-900 hover:bg-slate-50 dark:border-slate-700 dark:text-gray-100 dark:hover:bg-slate-800 focus:ring-slate-500",
+            "border-2 border-[rgba(223,147,85,0.3)] text-[#DF9355] hover:bg-[rgba(223,147,85,0.1)] hover:border-[#DF9355]",
         ghost:
-            "text-slate-700 hover:bg-slate-100 dark:text-gray-300 dark:hover:bg-slate-800 focus:ring-slate-500",
+            "text-[#e8dcc8] hover:bg-[rgba(223,147,85,0.1)] hover:text-[#DF9355]",
     };
 
     const sizes = {

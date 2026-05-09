@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
-import { cn } from "../../utils/cn";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 
 export const ProjectCard = ({ project, index }) => {
     return (
@@ -9,10 +8,15 @@ export const ProjectCard = ({ project, index }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group relative flex flex-col rounded-3xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700/50 hover:border-primary/50 dark:hover:border-primary/50 transition-colors"
+            className="group relative flex flex-col rounded-2xl overflow-hidden border transition-all hover:shadow-[0_0_40px_rgba(223,147,85,0.15)]"
+            style={{ 
+                background: "rgba(9,69,80,0.15)", 
+                backdropFilter: "blur(20px)",
+                borderColor: "rgba(223,147,85,0.1)" 
+            }}
         >
             <div className="relative aspect-[4/3] overflow-hidden">
-                <div className="absolute inset-0 bg-slate-900/10 dark:bg-slate-900/20 z-10 mix-blend-multiply transition-opacity group-hover:opacity-0" />
+                <div className="absolute inset-0 bg-[#030e11]/30 z-10 transition-opacity group-hover:opacity-0" />
                 <motion.img
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.4, ease: "easeOut" }}
@@ -21,30 +25,34 @@ export const ProjectCard = ({ project, index }) => {
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 left-4 z-20">
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold tracking-wide bg-white/90 dark:bg-slate-900/90 text-slate-900 dark:text-white backdrop-blur-md">
+                    <span 
+                        className="px-3 py-1 rounded-full text-xs font-semibold tracking-wide backdrop-blur-md"
+                        style={{ background: "rgba(3,14,17,0.8)", color: "#DF9355" }}
+                    >
                         {project.category}
                     </span>
                 </div>
             </div>
 
             <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                <h3 
+                    className="text-xl font-bold mb-2 transition-colors group-hover:text-[#DF9355]"
+                    style={{ fontFamily: "Syne, sans-serif", color: "#e8dcc8" }}
+                >
                     {project.title}
                 </h3>
-                <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 flex-grow leading-relaxed">
+                <p className="text-sm mb-6 flex-grow leading-relaxed" style={{ color: "rgba(232,220,200,0.6)" }}>
                     {project.description}
                 </p>
 
-                <div className="flex items-center gap-3 mt-auto pt-4 border-t border-slate-200 dark:border-slate-700">
+                <div className="flex items-center gap-4 mt-auto pt-4 border-t" style={{ borderColor: "rgba(223,147,85,0.1)" }}>
                     {project.liveUrl && (
                         <a
                             href={project.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={cn(
-                                "inline-flex items-center gap-1.5 text-sm font-medium transition-colors",
-                                "text-slate-900 dark:text-white hover:text-primary dark:hover:text-primary"
-                            )}
+                            className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-[#DF9355]"
+                            style={{ color: "#e8dcc8" }}
                         >
                             Live Site <ExternalLink className="w-4 h-4" />
                         </a>
@@ -54,10 +62,8 @@ export const ProjectCard = ({ project, index }) => {
                             href={project.behanceUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={cn(
-                                "inline-flex items-center gap-1.5 text-sm font-medium transition-colors",
-                                "text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
-                            )}
+                            className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-[#e8dcc8]"
+                            style={{ color: "rgba(232,220,200,0.5)" }}
                         >
                             Branding <ArrowUpRight className="w-4 h-4" />
                         </a>

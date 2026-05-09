@@ -1,25 +1,49 @@
 import { motion } from "framer-motion";
 import { testimonials } from "../data";
 import { TestimonialCard } from "../components/ui/TestimonialCard";
+import { GradientBlobs } from "../components/ui/GradientBlobs";
 
 export const Testimonials = () => {
     return (
-        <div className="w-full min-h-screen py-24 bg-white dark:bg-slate-900">
-            <div className="container mx-auto px-6 max-w-7xl">
+        <motion.div 
+            className="w-full min-h-screen pt-24 py-24 relative" 
+            style={{ background: "#030e11" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+        >
+            <GradientBlobs variant="minimal" />
+            
+            <div className="container mx-auto px-6 max-w-7xl relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-20">
-                    <motion.h1
+                    <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight"
+                        className="text-sm uppercase tracking-widest mb-4"
+                        style={{ color: "#DF9355" }}
                     >
-                        Client <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Stories</span>
+                        Testimonials
+                    </motion.p>
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.1 }}
+                        className="text-4xl md:text-6xl font-bold mb-6"
+                        style={{ fontFamily: "Syne, sans-serif", color: "#e8dcc8" }}
+                    >
+                        Client{" "}
+                        <span className="bg-gradient-to-r from-[#DF9355] to-[#D27321] bg-clip-text text-transparent">
+                            Stories
+                        </span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.1 }}
-                        className="text-lg text-slate-600 dark:text-slate-400 font-medium"
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        className="text-lg"
+                        style={{ color: "rgba(232,220,200,0.7)" }}
                     >
                         Don't just take our word for it. Here's what our partners have to say about working with us.
                     </motion.p>
@@ -35,6 +59,6 @@ export const Testimonials = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };

@@ -1,17 +1,27 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import { Button } from "../components/ui/Button";
+import { GradientBlobs } from "../components/ui/GradientBlobs";
 
 export const NotFound = () => {
     return (
-        <div className="w-full min-h-[80vh] flex items-center justify-center p-6 text-center">
-            <div className="max-w-md">
+        <motion.div 
+            className="w-full min-h-screen flex items-center justify-center p-6 text-center pt-24 relative"
+            style={{ background: "#030e11" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+        >
+            <GradientBlobs variant="minimal" />
+            
+            <div className="max-w-md relative z-10">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, type: "spring" }}
-                    className="text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600 mb-8"
+                    className="text-9xl font-bold bg-gradient-to-r from-[#DF9355] via-[#D27321] to-[#A4492A] bg-clip-text text-transparent mb-8"
+                    style={{ fontFamily: "Syne, sans-serif" }}
                 >
                     404
                 </motion.div>
@@ -19,7 +29,8 @@ export const NotFound = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className="text-3xl font-bold text-slate-900 dark:text-white mb-4"
+                    className="text-3xl font-bold mb-4"
+                    style={{ fontFamily: "Syne, sans-serif", color: "#e8dcc8" }}
                 >
                     Page not found
                 </motion.h2>
@@ -27,7 +38,8 @@ export const NotFound = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="text-slate-600 dark:text-slate-400 font-medium mb-8"
+                    className="mb-8"
+                    style={{ color: "rgba(232,220,200,0.6)" }}
                 >
                     Sorry, we couldn't find the page you're looking for. It might have been moved or doesn't exist.
                 </motion.p>
@@ -36,13 +48,15 @@ export const NotFound = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <Link to="/">
-                        <Button size="lg" className="w-full sm:w-auto">
-                            <ArrowLeft className="mr-2 w-5 h-5" /> Back to Home
-                        </Button>
+                    <Link 
+                        to="/"
+                        className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold transition-all hover:shadow-[0_0_30px_rgba(223,147,85,0.4)]"
+                        style={{ background: "linear-gradient(135deg, #DF9355, #D27321)", color: "#fff" }}
+                    >
+                        <ArrowLeft className="mr-2 w-5 h-5" /> Back to Home
                     </Link>
                 </motion.div>
             </div>
-        </div>
+        </motion.div>
     );
 };

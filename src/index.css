@@ -1,17 +1,35 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap");
 
 @theme {
-  --font-sans: "Inter", "Outfit", system-ui, sans-serif;
-  --color-primary: #3b82f6; /* Blue 500 */
-  --color-secondary: #10b981; /* Emerald 500 */
-  --color-background-dark: #0f172a; /* Slate 900 */
-  --color-surface-dark: #1e293b; /* Slate 800 */
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Syne", system-ui, sans-serif;
+
+  /* Brand Palette */
+  --color-brand-dark: #094550;
+  --color-brand-teal: #226A76;
+  --color-brand-green: #42776F;
+  --color-brand-gold: #DF9355;
+  --color-brand-orange: #D27321;
+  --color-brand-rust: #A4492A;
+
+  /* Backgrounds */
+  --color-bg-base: #030e11;
+  --color-bg-surface: #071820;
+  --color-bg-elevated: #0c2430;
+
+  /* Legacy compat */
+  --color-primary: #DF9355;
+  --color-secondary: #226A76;
+  --color-background-dark: #030e11;
+  --color-surface-dark: #071820;
 }
 
 @custom-variant dark (&:is(.dark *));
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto; /* Lenis handles smooth scroll */
+  overflow-x: hidden;
 }
 
 body {
@@ -19,13 +37,110 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  @apply bg-white text-slate-900 dark:bg-background-dark dark:text-gray-100 antialiased font-sans;
+  background-color: #030e11;
+  color: #e8dcc8;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Restore cursor on touch devices and inputs */
+@media (pointer: coarse) {
+  body, a, button, input, textarea, select {
+    cursor: auto !important;
+  }
+}
+
+input, textarea, select {
+  cursor: text;
+}
+
+a, button, [role="button"] {
+  cursor: none;
 }
 
 ::selection {
-  @apply bg-primary/30 text-inherit;
+  background: rgba(223, 147, 85, 0.3);
 }
 
 #root {
   width: 100%;
+  overflow-x: hidden;
+}
+
+/* Display font utility */
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Cinematic text reveal clip */
+.clip-reveal {
+  clip-path: inset(0 0 100% 0);
+}
+
+/* Premium glow effects */
+.glow-gold {
+  box-shadow: 0 0 40px rgba(223, 147, 85, 0.25), 0 0 80px rgba(223, 147, 85, 0.1);
+}
+.glow-teal {
+  box-shadow: 0 0 40px rgba(34, 106, 118, 0.3), 0 0 80px rgba(34, 106, 118, 0.15);
+}
+
+/* Gradient text */
+.gradient-gold {
+  background: linear-gradient(135deg, #DF9355 0%, #D27321 50%, #A4492A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradient-teal {
+  background: linear-gradient(135deg, #226A76 0%, #42776F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(9, 69, 80, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(223, 147, 85, 0.1);
+}
+.glass-strong {
+  background: rgba(7, 24, 32, 0.7);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(34, 106, 118, 0.2);
+}
+
+/* Scroll indicator animation */
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(8px); opacity: 0.4; }
+}
+.scroll-bounce {
+  animation: scroll-bounce 2s ease-in-out infinite;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+
+/* Gradient animated background */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
 }

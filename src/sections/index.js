@@ -1,0 +1,9 @@
+export { HeroSection } from "./HeroSection";
+export { TrustMarquee } from "./TrustMarquee";
+export { ServicesSection } from "./ServicesSection";
+export { ShowreelSection } from "./ShowreelSection";
+export { CaseStudiesSection } from "./CaseStudiesSection";
+export { ProcessTimeline } from "./ProcessTimeline";
+export { TestimonialsSection } from "./TestimonialsSection";
+export { TeamSection } from "./TeamSection";
+export { FinalCTA } from "./FinalCTA";
