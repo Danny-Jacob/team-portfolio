@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Outfit", system-ui, sans-serif;
+  --color-primary: #3b82f6; /* Blue 500 */
+  --color-secondary: #10b981; /* Emerald 500 */
+  --color-background-dark: #0f172a; /* Slate 900 */
+  --color-surface-dark: #1e293b; /* Slate 800 */
+}
+
+@custom-variant dark (&:is(.dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-white text-slate-900 dark:bg-background-dark dark:text-gray-100 antialiased font-sans;
+}
+
+::selection {
+  @apply bg-primary/30 text-inherit;
+}
+
+#root {
+  width: 100%;
+}
