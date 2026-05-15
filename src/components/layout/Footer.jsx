@@ -26,7 +26,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative pt-32 pb-12" style={{ background: "#030e11" }}>
+    <footer className="relative pt-32 pb-12" style={{ background: "#094550" }}>
       {/* Top border glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-[#DF9355]/40 to-transparent" />
 
@@ -75,8 +75,7 @@ export const Footer = () => {
                 className="text-2xl font-bold tracking-tight"
                 style={{ fontFamily: "Syne, sans-serif" }}
               >
-                <span style={{ color: "#DF9355" }}>Aura</span>
-                <span style={{ color: "#e8dcc8" }}>Studio</span>
+                <span className="bg-gradient-to-r from-[#DF9355] to-[#D27321] bg-clip-text text-transparent">KAANTHA</span>
               </span>
             </Link>
             <p className="text-[#e8dcc8]/60 text-sm leading-relaxed max-w-xs">
@@ -126,8 +125,8 @@ export const Footer = () => {
             </h4>
             <ul className="flex flex-col gap-4 text-sm font-medium text-[#e8dcc8]/70">
               <li>
-                <a href="mailto:hello@aurastudio.in" className="hover:text-[#e8dcc8] transition-colors">
-                  hello@aurastudio.in
+                <a href="mailto:hello@kaantha.in" className="hover:text-[#e8dcc8] transition-colors">
+                  hello@kaantha.in
                 </a>
               </li>
               <li>
@@ -145,7 +144,7 @@ export const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-[#e8dcc8]/40 text-sm">
-            © {currentYear} Aura Studio. All rights reserved.
+            © {currentYear} KAANTHA. All rights reserved.
           </p>
 
           {/* Social icons */}

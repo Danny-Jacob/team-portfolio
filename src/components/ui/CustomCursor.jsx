@@ -8,8 +8,10 @@ export const CustomCursor = () => {
     const [cursorState, setCursorState] = useState("default");
     const [cursorText, setCursorText] = useState("");
     const [isVisible, setIsVisible] = useState(true);
-    const pos = useRef({ x: 0, y: 0 });
-    const mouse = useRef({ x: 0, y: 0 });
+    const pos = useRef({ x: -100, y: -100 });
+    const mouse = useRef({ x: -100, y: -100 });
+    const rafId = useRef(null);
+    const hasMoved = useRef(false);
 
     useEffect(() => {
         // Check for touch device
@@ -19,12 +21,13 @@ export const CustomCursor = () => {
             return;
         }
 
-        const cursor = cursorRef.current;
-        const cursorDot = cursorDotRef.current;
-
         // Mouse move handler
         const onMouseMove = (e) => {
             mouse.current = { x: e.clientX, y: e.clientY };
+            if (!hasMoved.current) {
+                hasMoved.current = true;
+                pos.current = { x: e.clientX, y: e.clientY };
+            }
         };
 
         // Animation loop for smooth follow
@@ -33,14 +36,14 @@ export const CustomCursor = () => {
             pos.current.x += (mouse.current.x - pos.current.x) * 0.15;
             pos.current.y += (mouse.current.y - pos.current.y) * 0.15;
 
-            if (cursor) {
-                cursor.style.transform = `translate(${pos.current.x}px, ${pos.current.y}px)`;
+            if (cursorRef.current) {
+                cursorRef.current.style.transform = `translate(${pos.current.x}px, ${pos.current.y}px)`;
             }
-            if (cursorDot) {
-                cursorDot.style.transform = `translate(${mouse.current.x}px, ${mouse.current.y}px)`;
+            if (cursorDotRef.current) {
+                cursorDotRef.current.style.transform = `translate(${mouse.current.x}px, ${mouse.current.y}px)`;
             }
 
-            requestAnimationFrame(animate);
+            rafId.current = requestAnimationFrame(animate);
         };
 
         // Element hover handlers
@@ -114,19 +117,23 @@ export const CustomCursor = () => {
         });
 
         // Start animation
-        animate();
+        rafId.current = requestAnimationFrame(animate);
 
         // MutationObserver to handle dynamically added elements
+        let mutationTimeout;
         const observer = new MutationObserver(() => {
-            const newElements = document.querySelectorAll(
-                "a, button, [data-cursor], .magnetic, input, textarea, [role='button']"
-            );
-            newElements.forEach((el) => {
-                el.removeEventListener("mouseenter", handleMouseEnter);
-                el.removeEventListener("mouseleave", handleMouseLeave);
-                el.addEventListener("mouseenter", handleMouseEnter);
-                el.addEventListener("mouseleave", handleMouseLeave);
-            });
+            clearTimeout(mutationTimeout);
+            mutationTimeout = setTimeout(() => {
+                const newElements = document.querySelectorAll(
+                    "a, button, [data-cursor], .magnetic, input, textarea, [role='button']"
+                );
+                newElements.forEach((el) => {
+                    el.removeEventListener("mouseenter", handleMouseEnter);
+                    el.removeEventListener("mouseleave", handleMouseLeave);
+                    el.addEventListener("mouseenter", handleMouseEnter);
+                    el.addEventListener("mouseleave", handleMouseLeave);
+                });
+            }, 300);
         });
 
         observer.observe(document.body, { childList: true, subtree: true });
@@ -141,6 +148,8 @@ export const CustomCursor = () => {
                 el.removeEventListener("mouseenter", handleMouseEnter);
                 el.removeEventListener("mouseleave", handleMouseLeave);
             });
+            cancelAnimationFrame(rafId.current);
+            clearTimeout(mutationTimeout);
             observer.disconnect();
         };
     }, []);
@@ -168,11 +177,6 @@ export const CustomCursor = () => {
         });
     }, [cursorState]);
 
-    // Don't render on touch devices
-    if (!isVisible) {
-        return null;
-    }
-
     return (
         <>
             {/* Main cursor circle */}
@@ -197,6 +201,7 @@ export const CustomCursor = () => {
                     justifyContent: "center",
                     transition: "opacity 0.3s",
                     opacity: isVisible ? 1 : 0,
+                    visibility: isVisible ? "visible" : "hidden",
                     background: cursorState !== "default" ? "rgba(223, 147, 85, 0.1)" : "transparent",
                 }}
             >
@@ -234,6 +239,7 @@ export const CustomCursor = () => {
                     pointerEvents: "none",
                     zIndex: 10000,
                     opacity: isVisible ? 1 : 0,
+                    visibility: isVisible ? "visible" : "hidden",
                     transition: "opacity 0.3s",
                 }}
             />

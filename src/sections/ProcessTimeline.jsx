@@ -100,7 +100,7 @@ export function ProcessTimeline() {
     <section
       ref={sectionRef}
       className="py-32 relative"
-      style={{ background: "#071820" }}
+      style={{ background: "#226A76" }}
     >
       {/* Background accents */}
       <div

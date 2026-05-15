@@ -40,7 +40,7 @@ function CaseStudyCard({ study, index, size = "normal" }) {
       className={`relative overflow-hidden rounded-2xl cursor-pointer group ${
         isLarge ? "md:col-span-2 md:row-span-2" : ""
       }`}
-      style={{ background: "#071820" }}
+      style={{ background: "#226A76" }}
     >
       {/* Image */}
       <motion.div
@@ -141,7 +141,7 @@ export function CaseStudiesSection() {
     <section
       ref={sectionRef}
       className="py-32"
-      style={{ background: "#030e11" }}
+      style={{ background: "#094550" }}
     >
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Header */}

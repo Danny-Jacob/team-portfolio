@@ -43,7 +43,7 @@ export function FinalCTA() {
       <div
         className="absolute inset-0 animate-gradient"
         style={{
-          background: "linear-gradient(135deg, #094550 0%, #0c2430 25%, #071820 50%, #0c2430 75%, #094550 100%)",
+          background: "linear-gradient(135deg, #094550 0%, #226A76 25%, #42776F 50%, #226A76 75%, #094550 100%)",
           backgroundSize: "400% 400%",
         }}
       />
@@ -158,7 +158,7 @@ export function FinalCTA() {
                   className="w-8 h-8 rounded-full border-2"
                   style={{
                     background: `linear-gradient(135deg, ${["#DF9355", "#D27321", "#226A76", "#42776F"][i]}, ${["#D27321", "#A4492A", "#094550", "#226A76"][i]})`,
-                    borderColor: "#071820",
+                    borderColor: "#094550",
                   }}
                 />
               ))}

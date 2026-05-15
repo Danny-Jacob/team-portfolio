@@ -132,7 +132,7 @@ export function TeamSection() {
     <section
       ref={sectionRef}
       className="py-32"
-      style={{ background: "#071820" }}
+      style={{ background: "#226A76" }}
     >
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Header */}

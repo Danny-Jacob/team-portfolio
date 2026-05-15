@@ -52,19 +52,19 @@ export function ShowreelSection() {
     <section
       ref={sectionRef}
       className="relative py-32"
-      style={{ background: "#030e11" }}
+      style={{ background: "#094550" }}
     >
       {/* Video container */}
       <div
         ref={videoRef}
         className="relative w-full aspect-video overflow-hidden"
-        style={{ background: "#071820" }}
+        style={{ background: "#226A76" }}
       >
         {/* Placeholder video background */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(135deg, #094550 0%, #071820 50%, #0c2430 100%)",
+            background: "linear-gradient(135deg, #094550 0%, #226A76 50%, #42776F 100%)",
           }}
         />
 

@@ -16,7 +16,7 @@ export const Button = ({
         primary:
             "bg-gradient-to-r from-[#DF9355] to-[#D27321] text-white hover:shadow-[0_0_30px_rgba(223,147,85,0.4)]",
         secondary:
-            "bg-[#071820] text-[#e8dcc8] border border-[rgba(223,147,85,0.2)] hover:border-[#DF9355]/50",
+            "bg-[#226A76] text-[#e8dcc8] border border-[rgba(223,147,85,0.2)] hover:border-[#DF9355]/50",
         outline:
             "border-2 border-[rgba(223,147,85,0.3)] text-[#DF9355] hover:bg-[rgba(223,147,85,0.1)] hover:border-[#DF9355]",
         ghost:

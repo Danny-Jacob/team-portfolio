@@ -7,7 +7,7 @@ export const About = () => {
     return (
         <motion.div 
             className="w-full pt-24 relative" 
-            style={{ background: "#030e11" }}
+            style={{ background: "#094550" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -56,7 +56,7 @@ export const About = () => {
             </section>
 
             {/* Services Section */}
-            <section className="py-24" style={{ background: "#071820" }}>
+            <section className="py-24" style={{ background: "#226A76" }}>
                 <div className="container mx-auto px-6 max-w-7xl">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -121,7 +121,7 @@ export const About = () => {
             </section>
 
             {/* Stats Section */}
-            <section className="py-24 border-t border-white/5" style={{ background: "#030e11" }}>
+            <section className="py-24 border-t border-white/5" style={{ background: "#094550" }}>
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
                         {[

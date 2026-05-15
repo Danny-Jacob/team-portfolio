@@ -16,7 +16,7 @@ export const ProjectCard = ({ project, index }) => {
             }}
         >
             <div className="relative aspect-[4/3] overflow-hidden">
-                <div className="absolute inset-0 bg-[#030e11]/30 z-10 transition-opacity group-hover:opacity-0" />
+                <div className="absolute inset-0 bg-[#094550]/30 z-10 transition-opacity group-hover:opacity-0" />
                 <motion.img
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.4, ease: "easeOut" }}
@@ -27,7 +27,7 @@ export const ProjectCard = ({ project, index }) => {
                 <div className="absolute top-4 left-4 z-20">
                     <span 
                         className="px-3 py-1 rounded-full text-xs font-semibold tracking-wide backdrop-blur-md"
-                        style={{ background: "rgba(3,14,17,0.8)", color: "#DF9355" }}
+                        style={{ background: "rgba(9,69,80,0.8)", color: "#DF9355" }}
                     >
                         {project.category}
                     </span>

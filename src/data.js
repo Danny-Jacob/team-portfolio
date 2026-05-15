@@ -112,58 +112,138 @@ export const services = [
   {
     id: 1,
     title: "Branding",
+    slug: "branding",
     description: "Craft distinctive brand identities that resonate with your audience and stand out in crowded markets.",
+    longDescription: "We create comprehensive brand identities that tell your story and connect with your target audience. From logo design and visual systems to brand guidelines and messaging frameworks, we build brands that leave lasting impressions and drive business growth.",
     icon: "Palette",
     gradient: "from-[#DF9355] to-[#D27321]",
+    demoImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1600&q=80",
+    features: [
+      "Logo & Visual Identity Design",
+      "Brand Strategy & Positioning",
+      "Brand Guidelines & Style Guides",
+      "Packaging & Collateral Design",
+      "Brand Voice & Messaging"
+    ]
   },
   {
     id: 2,
     title: "Performance Marketing",
+    slug: "performance-marketing",
     description: "Data-driven campaigns that maximize ROI across Meta, Google, and programmatic channels.",
+    longDescription: "Our performance marketing team leverages advanced analytics and AI-powered optimization to deliver measurable results. We manage end-to-end campaigns across all major platforms, continuously testing and refining to maximize your return on ad spend.",
     icon: "TrendingUp",
     gradient: "from-[#226A76] to-[#42776F]",
+    demoImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80",
+    features: [
+      "Meta & Google Ads Management",
+      "Programmatic Advertising",
+      "Conversion Rate Optimization",
+      "Attribution & Analytics",
+      "A/B Testing & Experimentation"
+    ]
   },
   {
     id: 3,
     title: "AI Automation",
+    slug: "ai-automation",
     description: "Custom AI workflows and chatbots that streamline operations and enhance customer experience.",
+    longDescription: "Harness the power of artificial intelligence to automate repetitive tasks, enhance customer interactions, and unlock new insights from your data. We build custom AI solutions tailored to your specific business needs and workflows.",
     icon: "Bot",
     gradient: "from-[#D27321] to-[#A4492A]",
+    demoImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80",
+    features: [
+      "Custom Chatbot Development",
+      "Workflow Automation",
+      "AI-Powered Analytics",
+      "Natural Language Processing",
+      "Predictive Modeling"
+    ]
   },
   {
     id: 4,
     title: "SEO Strategy",
+    slug: "seo-strategy",
     description: "Technical and content SEO that drives organic visibility and sustainable traffic growth.",
+    longDescription: "Dominate search results with our comprehensive SEO strategies. We combine technical excellence with compelling content to build sustainable organic traffic that compounds over time, reducing your dependence on paid acquisition.",
     icon: "Search",
     gradient: "from-[#42776F] to-[#094550]",
+    demoImage: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1600&q=80",
+    features: [
+      "Technical SEO Audits",
+      "Keyword Research & Strategy",
+      "Content Optimization",
+      "Link Building & Outreach",
+      "Local SEO & Google Business"
+    ]
   },
   {
     id: 5,
     title: "Web Design",
+    slug: "web-design",
     description: "Immersive, award-worthy websites built with cutting-edge technologies and cinematic interactions.",
+    longDescription: "We design and develop stunning websites that captivate visitors and convert them into customers. Using the latest technologies and interaction design principles, we create digital experiences that set you apart from the competition.",
     icon: "Monitor",
     gradient: "from-[#DF9355] to-[#A4492A]",
+    demoImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1600&q=80",
+    features: [
+      "UI/UX Design & Prototyping",
+      "Responsive Web Development",
+      "Micro-interactions & Animation",
+      "CMS Integration",
+      "Performance Optimization"
+    ]
   },
   {
     id: 6,
     title: "Social Media",
+    slug: "social-media",
     description: "Strategic content creation and community management that builds engaged audiences.",
+    longDescription: "Build a loyal following and turn social media into a growth engine. We handle everything from strategy and content creation to community management and paid social, ensuring your brand shows up consistently across all platforms.",
     icon: "Share2",
     gradient: "from-[#226A76] to-[#094550]",
+    demoImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1600&q=80",
+    features: [
+      "Social Media Strategy",
+      "Content Calendar Planning",
+      "Community Management",
+      "Influencer Partnerships",
+      "Social Listening & Analytics"
+    ]
   },
   {
     id: 7,
     title: "Content Production",
+    slug: "content-production",
     description: "Premium video, photography, and motion design that captures attention and tells your story.",
+    longDescription: "Create scroll-stopping content that captures attention and drives engagement. From product photography and brand videos to motion graphics and podcast production, we bring your brand to life across every medium.",
     icon: "Video",
     gradient: "from-[#D27321] to-[#DF9355]",
+    demoImage: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1600&q=80",
+    features: [
+      "Video Production & Editing",
+      "Product & Lifestyle Photography",
+      "Motion Graphics & Animation",
+      "Podcast Production",
+      "Live Streaming & Events"
+    ]
   },
   {
     id: 8,
     title: "Funnel Optimization",
+    slug: "funnel-optimization",
     description: "Conversion-focused landing pages and sales funnels that turn visitors into customers.",
+    longDescription: "Maximize every visitor with high-converting funnels engineered for results. We design, build, and optimize complete sales funnels that guide prospects from awareness to action, increasing your conversion rates at every stage.",
     icon: "Target",
     gradient: "from-[#094550] to-[#226A76]",
+    demoImage: "https://images.unsplash.com/photo-1553484771-371a605b060b?auto=format&fit=crop&w=1600&q=80",
+    features: [
+      "Landing Page Design",
+      "Sales Funnel Architecture",
+      "Email Sequence Automation",
+      "Checkout Optimization",
+      "Retargeting Campaigns"
+    ]
   },
 ];
 

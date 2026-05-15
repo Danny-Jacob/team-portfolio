@@ -13,16 +13,16 @@
   --color-brand-orange: #D27321;
   --color-brand-rust: #A4492A;
 
-  /* Backgrounds */
-  --color-bg-base: #030e11;
-  --color-bg-surface: #071820;
-  --color-bg-elevated: #0c2430;
+  /* Backgrounds - derived from palette */
+  --color-bg-base: #094550;
+  --color-bg-surface: #226A76;
+  --color-bg-elevated: #42776F;
 
   /* Legacy compat */
   --color-primary: #DF9355;
   --color-secondary: #226A76;
-  --color-background-dark: #030e11;
-  --color-surface-dark: #071820;
+  --color-background-dark: #094550;
+  --color-surface-dark: #226A76;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -37,7 +37,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #030e11;
+  background-color: #094550;
   color: #e8dcc8;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;

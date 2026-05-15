@@ -203,7 +203,7 @@ export function HeroSection() {
     <section
       ref={heroRef}
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-24 pb-16"
-      style={{ background: "linear-gradient(180deg, #030e11 0%, #071820 100%)" }}
+      style={{ background: "linear-gradient(180deg, #094550 0%, #226A76 100%)" }}
     >
       <ParticleField />
 

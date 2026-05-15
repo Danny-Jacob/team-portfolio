@@ -18,6 +18,7 @@ import { Projects } from "./pages/Projects";
 import { Testimonials } from "./pages/Testimonials";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
+import { ServiceDetail } from "./pages/ServiceDetail";
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -48,6 +49,7 @@ function AnimatedRoutes() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services/:slug" element={<ServiceDetail />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
@@ -86,7 +88,7 @@ function App() {
         <div 
           className="flex flex-col min-h-screen overflow-x-hidden" 
           style={{ 
-            background: "#030e11", 
+            background: "#094550", 
             color: "#e8dcc8",
             opacity: isLoading ? 0 : 1,
             transition: "opacity 0.5s ease-in-out",

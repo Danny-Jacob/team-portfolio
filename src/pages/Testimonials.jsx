@@ -7,7 +7,7 @@ export const Testimonials = () => {
     return (
         <motion.div 
             className="w-full min-h-screen pt-24 py-24 relative" 
-            style={{ background: "#030e11" }}
+            style={{ background: "#094550" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

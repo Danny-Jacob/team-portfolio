@@ -47,8 +47,7 @@ export const Navbar = () => {
               className="text-xl font-bold tracking-tight"
               style={{ fontFamily: "Syne, sans-serif" }}
             >
-              <span style={{ color: "#DF9355" }}>Aura</span>
-              <span style={{ color: "#e8dcc8" }}>Studio</span>
+              <span className="bg-gradient-to-r from-[#DF9355] to-[#D27321] bg-clip-text text-transparent">KAANTHA</span>
             </span>
           </Link>
 
@@ -121,7 +120,7 @@ export const Navbar = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-40 flex flex-col pt-28 px-8 md:hidden"
-            style={{ background: "#030e11" }}
+            style={{ background: "#094550" }}
           >
             <ul className="flex flex-col gap-8">
               {navLinks.map((link, i) => (

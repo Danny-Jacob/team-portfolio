@@ -15,7 +15,7 @@ export const Contact = () => {
     return (
         <motion.div 
             className="w-full min-h-screen pt-24 py-24 relative" 
-            style={{ background: "#030e11" }}
+            style={{ background: "#094550" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -74,7 +74,7 @@ export const Contact = () => {
                                 {
                                     icon: Mail,
                                     title: "Email",
-                                    content: "hello@aurastudio.in",
+                                    content: "hello@kaantha.in",
                                     sub: "We're here to help.",
                                 },
                                 {

@@ -92,7 +92,7 @@ export function TestimonialsSection() {
   return (
     <section
       className="py-32 overflow-hidden"
-      style={{ background: "#030e11" }}
+      style={{ background: "#094550" }}
     >
       <div className="container mx-auto px-6 max-w-7xl mb-16">
         {/* Header */}
@@ -129,11 +129,11 @@ export function TestimonialsSection() {
         {/* Gradient edges */}
         <div
           className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(90deg, #030e11 0%, transparent 100%)" }}
+          style={{ background: "linear-gradient(90deg, #094550 0%, transparent 100%)" }}
         />
         <div
           className="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(270deg, #030e11 0%, transparent 100%)" }}
+          style={{ background: "linear-gradient(270deg, #094550 0%, transparent 100%)" }}
         />
 
         <div
@@ -158,7 +158,7 @@ export function TestimonialsSection() {
           className="text-xl md:text-2xl font-medium leading-relaxed"
           style={{ color: "rgba(232,220,200,0.6)" }}
         >
-          "Working with Aura Studio wasn't just a transaction—it was a transformation. 
+          "Working with KAANTHA wasn't just a transaction—it was a transformation. 
           They don't just meet expectations; they redefine them."
         </p>
         <p className="mt-6 text-sm" style={{ color: "#DF9355" }}>

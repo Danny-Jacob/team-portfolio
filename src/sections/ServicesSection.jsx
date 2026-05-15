@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { 
   Palette, TrendingUp, Bot, Search, 
   Monitor, Share2, Video, Target 
@@ -60,14 +61,15 @@ function ServiceCard({ service, index }) {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay: index * 0.08 }}
     >
-      <div
-        ref={cardRef}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        className="h-full"
-        style={{ transformStyle: "preserve-3d" }}
-      >
-        <GlassCard className="p-8 h-full group cursor-pointer">
+      <Link to={`/services/${service.slug}`} className="block h-full">
+        <div
+          ref={cardRef}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+          className="h-full"
+          style={{ transformStyle: "preserve-3d" }}
+        >
+          <GlassCard className="p-8 h-full group cursor-pointer">
           {/* Icon with gradient background */}
           <div
             className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br ${service.gradient} shadow-lg`}
@@ -97,8 +99,9 @@ function ServiceCard({ service, index }) {
               <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-        </GlassCard>
-      </div>
+          </GlassCard>
+        </div>
+      </Link>
     </motion.div>
   );
 }
@@ -133,7 +136,7 @@ export function ServicesSection() {
     <section
       ref={sectionRef}
       className="py-32 relative"
-      style={{ background: "#030e11" }}
+      style={{ background: "#094550" }}
     >
       {/* Background accent */}
       <div

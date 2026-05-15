@@ -5,7 +5,7 @@ export function TrustMarquee() {
   const logos = [...trustLogos, ...trustLogos];
 
   return (
-    <section className="py-20 overflow-hidden" style={{ background: "#030e11" }}>
+    <section className="py-20 overflow-hidden" style={{ background: "#094550" }}>
       <div className="container mx-auto px-6 max-w-7xl mb-12">
         <p
           className="text-center text-sm uppercase tracking-widest"
@@ -20,11 +20,11 @@ export function TrustMarquee() {
         {/* Gradient fade edges */}
         <div
           className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(90deg, #030e11 0%, transparent 100%)" }}
+          style={{ background: "linear-gradient(90deg, #094550 0%, transparent 100%)" }}
         />
         <div
           className="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(270deg, #030e11 0%, transparent 100%)" }}
+          style={{ background: "linear-gradient(270deg, #094550 0%, transparent 100%)" }}
         />
 
         {/* Scrolling track */}
@@ -49,11 +49,11 @@ export function TrustMarquee() {
       <div className="relative mt-8">
         <div
           className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(90deg, #030e11 0%, transparent 100%)" }}
+          style={{ background: "linear-gradient(90deg, #094550 0%, transparent 100%)" }}
         />
         <div
           className="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(270deg, #030e11 0%, transparent 100%)" }}
+          style={{ background: "linear-gradient(270deg, #094550 0%, transparent 100%)" }}
         />
 
         <div

@@ -85,7 +85,7 @@ export const Preloader = ({ onComplete }) => {
                         left: 0,
                         width: "100%",
                         height: "100%",
-                        background: "#030e11",
+                        background: "#094550",
                         zIndex: 10000,
                         display: "flex",
                         flexDirection: "column",
@@ -129,23 +129,11 @@ export const Preloader = ({ onComplete }) => {
                                 backgroundClip: "text",
                             }}
                         >
-                            LUCENT
+                            KAANTHA
                         </h1>
-                        <p
-                            style={{
-                                color: "rgba(232,220,200,0.5)",
-                                fontSize: "0.875rem",
-                                letterSpacing: "0.3em",
-                                textTransform: "uppercase",
-                                textAlign: "center",
-                                marginTop: 8,
-                            }}
-                        >
-                            Studios
-                        </p>
                     </motion.div>
 
-                    {/* Progress bar */}
+                    {/* Progress bar */}}
                     <div
                         style={{
                             width: 200,
@@ -212,7 +200,7 @@ export const Preloader = ({ onComplete }) => {
                             left: 0,
                             width: "50%",
                             height: "100%",
-                            background: "#030e11",
+                            background: "#094550",
                             zIndex: -1,
                         }}
                     />
@@ -227,7 +215,7 @@ export const Preloader = ({ onComplete }) => {
                             right: 0,
                             width: "50%",
                             height: "100%",
-                            background: "#030e11",
+                            background: "#094550",
                             zIndex: -1,
                         }}
                     />

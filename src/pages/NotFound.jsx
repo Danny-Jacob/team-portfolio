@@ -7,7 +7,7 @@ export const NotFound = () => {
     return (
         <motion.div 
             className="w-full min-h-screen flex items-center justify-center p-6 text-center pt-24 relative"
-            style={{ background: "#030e11" }}
+            style={{ background: "#094550" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
