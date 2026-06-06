@@ -130,14 +130,22 @@ export function ProcessTimeline() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
             style={{ fontFamily: "Syne, sans-serif", color: "#e8dcc8" }}
           >
-            From vision to{" "}
-            <span className="bg-gradient-to-r from-[#DF9355] to-[#D27321] bg-clip-text text-transparent">
-              market dominance.
-            </span>
+            Discover. Define. Create. Grow.
           </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-lg"
+            style={{ color: "#DF9355", fontFamily: "Syne, sans-serif", fontWeight: 600 }}
+          >
+            Human.
+          </motion.p>
         </div>
 
         {/* Timeline */}

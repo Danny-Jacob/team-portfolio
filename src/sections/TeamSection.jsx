@@ -155,9 +155,9 @@ export function TeamSection() {
               className="text-4xl md:text-5xl font-bold"
               style={{ fontFamily: "Syne, sans-serif", color: "#e8dcc8" }}
             >
-              Meet the minds{" "}
+              The People Behind{" "}
               <span className="bg-gradient-to-r from-[#DF9355] to-[#D27321] bg-clip-text text-transparent">
-                behind the magic.
+                KAANTHA.
               </span>
             </motion.h2>
           </div>
@@ -174,11 +174,24 @@ export function TeamSection() {
           </motion.p>
         </div>
 
+        {/* Co-founders section */}
+        <div className="mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {teamMembers
+              .filter((member) => member.isCofounder)
+              .map((member, i) => (
+                <TeamMember key={member.id} member={member} index={i} />
+              ))}
+          </div>
+        </div>
+
         {/* Team grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-          {teamMembers.map((member, i) => (
-            <TeamMember key={member.id} member={member} index={i} />
-          ))}
+          {teamMembers
+            .filter((member) => !member.isCofounder)
+            .map((member, i) => (
+              <TeamMember key={member.id} member={member} index={i + 2} />
+            ))}
         </div>
 
         {/* Join CTA */}

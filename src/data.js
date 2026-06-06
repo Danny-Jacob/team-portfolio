@@ -65,24 +65,51 @@ export const portfolioProjects = [
 export const teamMembers = [
   {
     id: 1,
-    name: "Elena Rostova",
-    title: "Lead UI/UX Designer",
-    bio: "Elena crafts stunning digital experiences with a deep passion for human-centered design and micro-interactions.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400"
+    name: "Srujan Kona",
+    title: "Co-Founder & Technical Director",
+    bio: "Srujan leads strategy, technology, and client partnerships at KAANTHA. With a passion for building digital experiences that blend creativity with performance, he works closely with brands to transform ideas into impactful products, campaigns, and experiences. His hands-on approach ensures every project remains aligned with both business goals and creative excellence.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+    isCofounder: true
   },
   {
     id: 2,
-    name: "Marcus Chen",
-    title: "Senior Technical Lead",
-    bio: "Marcus ensures pixel-perfect execution, translating complex designs into robust, bleeding-edge front-end architecture.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400"
+    name: "Kranti",
+    title: "Co-Founder & Creative Director",
+    bio: "Kranti leads the creative vision behind KAANTHA. From brand identities and user experiences to visual storytelling and design systems, she focuses on creating work that is both memorable and meaningful. Her belief that great design should evoke emotion while solving real business problems shapes every project that leaves the studio.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
+    isCofounder: true
   },
   {
     id: 3,
-    name: "Sarah Jenkins",
-    title: "Creative Director",
-    bio: "Sarah bridges the gap between raw artistic vision and strategic business goals, leading our creative campaigns.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400"
+    name: "Naveen",
+    title: "Marketing Lead",
+    bio: "With over a decade of experience in digital marketing, Naveen specializes in campaign strategy, audience growth, and performance-driven marketing. He helps brands connect with the right audience through data-backed decisions and compelling storytelling.",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
+    isCofounder: false
+  },
+  {
+    id: 4,
+    name: "Danny",
+    title: "Lead Developer",
+    bio: "Danny brings creative ideas to life through clean code and modern web technologies. His focus on performance, scalability, and user experience ensures every digital product meets the highest standards.",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
+    isCofounder: false
+  },
+  {
+    id: 5,
+    name: "Content Strategist",
+    title: "Content Strategist",
+    bio: "Responsible for shaping brand narratives, content strategies, and messaging that resonate with audiences across digital platforms.",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400",
+    isCofounder: false
+  },
+  {
+    id: 6,
+    name: "Video Editor & Motion Designer",
+    title: "Video Editor & Motion Designer",
+    bio: "Creates engaging visual content, motion graphics, and social-first creative assets that help brands stand out in competitive markets.",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c006ae30?auto=format&fit=crop&q=80&w=400",
+    isCofounder: false
   }
 ];
 
@@ -267,25 +294,25 @@ export const processSteps = [
     id: 1,
     number: "01",
     title: "Discover",
-    description: "We deep-dive into your business, audience, and competitors. Research-backed insights form the foundation of every strategy.",
+    description: "We listen, research, and understand your business, audience, and market.",
   },
   {
     id: 2,
     number: "02",
-    title: "Strategize",
-    description: "From brand positioning to channel selection, we architect a comprehensive roadmap tailored to your growth objectives.",
+    title: "Define",
+    description: "Clear strategy, distinctive positioning, and a roadmap built for real growth.",
   },
   {
     id: 3,
     number: "03",
     title: "Create",
-    description: "Our creative team brings the strategy to life through stunning visuals, compelling copy, and immersive digital experiences.",
+    description: "Beautiful, functional design and content that connects with people.",
   },
   {
     id: 4,
     number: "04",
-    title: "Scale",
-    description: "We launch, measure, optimize, and scale. Continuous iteration ensures sustained growth and market dominance.",
+    title: "Grow",
+    description: "Launch, measure, optimize, and scale. Growth that matters.",
   },
 ];
 
@@ -327,8 +354,8 @@ export const caseStudies = [
 
 // Hero stats
 export const heroStats = [
-  { value: "150+", label: "Projects Delivered" },
-  { value: "₹80Cr+", label: "Revenue Generated" },
-  { value: "98%", label: "Client Retention" },
-  { value: "12+", label: "Industry Awards" },
+  { value: "20+", label: "Brands Worked With" },
+  { value: "5+", label: "Years of Combined Leadership" },
+  { value: "", label: "Founder-Led Collaboration" },
+  { value: "", label: "End-to-End Creative & Growth Solutions" },
 ];

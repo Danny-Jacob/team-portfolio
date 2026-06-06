@@ -252,8 +252,13 @@ export function HeroSection() {
           className="text-lg md:text-xl max-w-2xl mb-12 leading-relaxed"
           style={{ color: "rgba(232,220,200,0.7)" }}
         >
-          Performance marketing, branding, AI automation, and immersive digital 
-          experiences for ambitious companies ready to dominate their markets.
+          We build brands, websites, and digital experiences that leave a lasting impression.
+          <br />
+          <br />
+          From strategy and design to social media marketing and growth, KAANTHA helps ambitious businesses stand out in a world full of noise.
+          <br />
+          <br />
+          <span style={{ fontSize: "1.1em", fontWeight: 600 }}>Where Creativity Awakens.</span>
         </p>
 
         {/* CTA buttons */}

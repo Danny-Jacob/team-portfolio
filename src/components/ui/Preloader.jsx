@@ -133,7 +133,7 @@ export const Preloader = ({ onComplete }) => {
                         </h1>
                     </motion.div>
 
-                    {/* Progress bar */}}
+                    {/* Progress bar */}
                     <div
                         style={{
                             width: 200,
