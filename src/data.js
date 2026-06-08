@@ -83,7 +83,7 @@ export const teamMembers = [
     id: 3,
     name: "Naveen",
     title: "Marketing Lead",
-    bio: "With over a decade of experience in digital marketing, Naveen specializes in campaign strategy, audience growth, and performance-driven marketing. He helps brands connect with the right audience through data-backed decisions and compelling storytelling.",
+    bio: "With over 11 years of experience in digital marketing, Naveen has managed performance campaigns across real estate, SaaS, industrial automation, technology, and e-commerce sectors. His experience includes overseeing more than ₹3 crore in advertising spend and contributing to campaigns responsible for over ₹150 crore in revenue generation through Google Ads, Meta Ads, LinkedIn Ads, and marketing automation systems.",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
     isCofounder: false
   },
@@ -141,16 +141,16 @@ export const services = [
     title: "Branding",
     slug: "branding",
     description: "Craft distinctive brand identities that resonate with your audience and stand out in crowded markets.",
-    longDescription: "We create comprehensive brand identities that tell your story and connect with your target audience. From logo design and visual systems to brand guidelines and messaging frameworks, we build brands that leave lasting impressions and drive business growth.",
+    longDescription: "Your brand is more than a logo. It's the feeling people associate with your business long before they become customers. At KAANTHA, we build distinctive brand identities that create recognition, trust, and lasting impact. From positioning and visual identity to messaging and brand systems, we help businesses define who they are and how they're remembered.",
     icon: "Palette",
     gradient: "from-[#DF9355] to-[#D27321]",
     demoImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1600&q=80",
     features: [
-      "Logo & Visual Identity Design",
       "Brand Strategy & Positioning",
-      "Brand Guidelines & Style Guides",
-      "Packaging & Collateral Design",
-      "Brand Voice & Messaging"
+      "Visual Identity Systems",
+      "Brand Guidelines",
+      "Packaging & Marketing Assets",
+      "Brand Messaging"
     ]
   },
   {
@@ -158,16 +158,17 @@ export const services = [
     title: "Performance Marketing",
     slug: "performance-marketing",
     description: "Data-driven campaigns that maximize ROI across Meta, Google, and programmatic channels.",
-    longDescription: "Our performance marketing team leverages advanced analytics and AI-powered optimization to deliver measurable results. We manage end-to-end campaigns across all major platforms, continuously testing and refining to maximize your return on ad spend.",
+    longDescription: "Marketing should do more than generate impressions. It should generate opportunities. Our performance marketing approach combines creative strategy, audience insights, and continuous optimization to help brands reach the right people at the right time. Every campaign is built around measurable business objectives—not vanity metrics.",
     icon: "TrendingUp",
     gradient: "from-[#226A76] to-[#42776F]",
     demoImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80",
     features: [
-      "Meta & Google Ads Management",
-      "Programmatic Advertising",
-      "Conversion Rate Optimization",
-      "Attribution & Analytics",
-      "A/B Testing & Experimentation"
+      "Meta Advertising",
+      "Google Advertising",
+      "Campaign Strategy",
+      "Audience Research",
+      "Creative Testing",
+      "Conversion Tracking"
     ]
   },
   {
@@ -175,7 +176,7 @@ export const services = [
     title: "AI Automation",
     slug: "ai-automation",
     description: "Custom AI workflows and chatbots that streamline operations and enhance customer experience.",
-    longDescription: "Harness the power of artificial intelligence to automate repetitive tasks, enhance customer interactions, and unlock new insights from your data. We build custom AI solutions tailored to your specific business needs and workflows.",
+    longDescription: "We help businesses identify repetitive processes and transform them into efficient workflows using modern AI and automation tools. Automation should simplify work, not complicate it. From intelligent assistants to workflow automation, our solutions are designed to save time and improve operational efficiency.",
     icon: "Bot",
     gradient: "from-[#D27321] to-[#A4492A]",
     demoImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80",
@@ -209,14 +210,15 @@ export const services = [
     title: "Web Design",
     slug: "web-design",
     description: "Immersive, award-worthy websites built with cutting-edge technologies and cinematic interactions.",
-    longDescription: "We design and develop stunning websites that captivate visitors and convert them into customers. Using the latest technologies and interaction design principles, we create digital experiences that set you apart from the competition.",
+    longDescription: "Your website is often the first impression people have of your brand. We design and develop modern digital experiences that balance beauty, performance, and usability. Every website is crafted to communicate your value, strengthen credibility, and create meaningful interactions with your audience.",
     icon: "Monitor",
     gradient: "from-[#DF9355] to-[#A4492A]",
     demoImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1600&q=80",
     features: [
-      "UI/UX Design & Prototyping",
-      "Responsive Web Development",
-      "Micro-interactions & Animation",
+      "UX Research",
+      "Wireframing",
+      "UI Design",
+      "Responsive Development",
       "CMS Integration",
       "Performance Optimization"
     ]
@@ -226,16 +228,18 @@ export const services = [
     title: "Social Media",
     slug: "social-media",
     description: "Strategic content creation and community management that builds engaged audiences.",
-    longDescription: "Build a loyal following and turn social media into a growth engine. We handle everything from strategy and content creation to community management and paid social, ensuring your brand shows up consistently across all platforms.",
+    longDescription: "Attention is today's most valuable currency. We help brands build a meaningful presence across social media through strategic content, creative storytelling, and performance-driven campaigns. From content planning and production to audience growth and campaign execution, we create social experiences that keep brands relevant and memorable. Whether you're building awareness, growing a community, or driving business results, our focus remains the same: creating content people actually want to engage with.",
     icon: "Share2",
     gradient: "from-[#226A76] to-[#094550]",
     demoImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1600&q=80",
     features: [
-      "Social Media Strategy",
-      "Content Calendar Planning",
+      "Content Strategy",
+      "Reel Production",
+      "Social Media Design",
+      "Copywriting",
       "Community Management",
-      "Influencer Partnerships",
-      "Social Listening & Analytics"
+      "Performance Campaigns",
+      "Analytics & Reporting"
     ]
   },
   {
@@ -354,8 +358,8 @@ export const caseStudies = [
 
 // Hero stats
 export const heroStats = [
-  { value: "20+", label: "Brands Worked With" },
-  { value: "5+", label: "Years of Combined Leadership" },
-  { value: "", label: "Founder-Led Collaboration" },
-  { value: "", label: "End-to-End Creative & Growth Solutions" },
+  { value: "₹150Cr+", label: "Revenue Influenced Through Paid Media" },
+  { value: "₹3Cr+", label: "Advertising Budget Managed" },
+  { value: "50+", label: "Marketing Campaigns Executed" },
+  { value: "6+", label: "Brands Supported Across Industries" },
 ];

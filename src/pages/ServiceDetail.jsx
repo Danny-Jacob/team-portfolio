@@ -162,6 +162,65 @@ export const ServiceDetail = () => {
         </div>
       </section>
 
+      {/* Authority Section - Only for Performance Marketing */}
+      {service.slug === "performance-marketing" && (
+        <section className="py-24" style={{ background: "#094550" }}>
+          <div className="container mx-auto px-6 max-w-7xl">
+            <div className="max-w-4xl">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="mb-12"
+              >
+                <h2
+                  className="text-3xl md:text-4xl font-bold mb-6"
+                  style={{ fontFamily: "Syne, sans-serif", color: "#e8dcc8" }}
+                >
+                  Marketing Experience That Delivers
+                </h2>
+                <p
+                  className="text-lg leading-relaxed mb-8"
+                  style={{ color: "rgba(232,220,200,0.75)" }}
+                >
+                  Our marketing leadership brings experience across multiple industries and growth stages, including real estate, SaaS, industrial automation, consumer electronics, and enterprise software.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="p-8 rounded-2xl border"
+                style={{
+                  background: "rgba(34,106,118,0.3)",
+                  borderColor: "rgba(223,147,85,0.15)"
+                }}
+              >
+                <p className="text-sm uppercase tracking-widest mb-6" style={{ color: "#DF9355" }}>
+                  Highlights
+                </p>
+                <ul className="space-y-4">
+                  {[
+                    "₹150Cr+ revenue influenced through paid media campaigns",
+                    "₹3Cr+ advertising budget managed",
+                    "50+ performance marketing campaigns executed",
+                    "Multi-channel expertise across Google Ads, Meta Ads, LinkedIn Ads, and HubSpot automation",
+                    "Proven experience in both B2B lead generation and consumer acquisition"
+                  ].map((highlight, idx) => (
+                    <li key={idx} className="flex items-start gap-4">
+                      <span style={{ color: "#DF9355" }} className="font-bold text-lg mt-1">•</span>
+                      <span style={{ color: "rgba(232,220,200,0.8)" }}>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Features Section */}
       <section className="py-24" style={{ background: "#226A76" }}>
         <div className="container mx-auto px-6 max-w-7xl">
@@ -444,20 +503,18 @@ export const ServiceDetail = () => {
               className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
               style={{ fontFamily: "Syne, sans-serif", color: "#e8dcc8" }}
             >
-              Ready to transform your{" "}
+              Ready to build something{" "}
               <span
                 className={`bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`}
               >
-                {service.title.toLowerCase()}
+                exceptional?
               </span>
-              ?
             </h2>
             <p
               className="text-lg md:text-xl max-w-2xl mx-auto mb-10"
               style={{ color: "rgba(232,220,200,0.7)" }}
             >
-              Let's discuss how we can help you achieve your goals. Book a free
-              strategy call with our team.
+              Whether you're launching a new brand, reimagining an existing one, or looking to accelerate growth, we'd love to explore what's possible together.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <MagneticButton
@@ -466,7 +523,7 @@ export const ServiceDetail = () => {
                 variant="gold"
                 className="text-base px-10 py-5"
               >
-                Book a Strategy Call
+                Let's Talk
                 <ArrowRight size={18} className="ml-2" />
               </MagneticButton>
               <MagneticButton
